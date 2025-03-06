@@ -1,5 +1,5 @@
 # Cloudtype에서 사용할 Python 버전
-FROM python:3.11
+FROM python:3.9
 
 WORKDIR /app
 
