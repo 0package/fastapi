@@ -19,6 +19,10 @@ RUN apt-get update && apt-get install -y \
     liblcms2-dev \
     libblas-dev \
     liblapack-dev \
+    libcario2 \
+    libcario2-dev \
+    pkg-config \
+    meson \
     gfortran \
     && rm -rf /var/lib/apt/lists/*
 
