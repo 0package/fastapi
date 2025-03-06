@@ -3,10 +3,13 @@ FROM python:3.11
 
 WORKDIR /app
 
-# 필요한 패키지 설치
 COPY requirements.txt .
+
+# requirements 필요 패키지 설치
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-# FastAPI 서버 실행
 COPY . .
+
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+
