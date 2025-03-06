@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.11
 
 # 작업 디렉토리 설정
 WORKDIR /app
@@ -21,4 +21,3 @@ COPY . .
 
 # FastAPI 실행 (uvicorn 사용)
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-
